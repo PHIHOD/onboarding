@@ -5,17 +5,15 @@ export default function Home() {
     <div className="container">
       <div className="card hero">
         <p className="text-display-1 hero-title">
-          Let’s start authenticating <br /> with KindeAuth
+          Let's start your journey <br /> with Midpilot
         </p>
-        <p className="text-body-1 hero-tagline">Configure your app</p>
+        <p className="text-body-1 hero-tagline">Begin your onboarding process</p>
 
         <Link
-          href="https://kinde.com/docs/sdks/nextjs-sdk"
-          target="_blank"
-          rel="noreferrer"
+          href="/dashboard"
           className="btn btn-light btn-big"
         >
-          Go to docs
+          Get Started
         </Link>
       </div>
     </div>
