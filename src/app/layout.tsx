@@ -6,7 +6,6 @@ import {
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import Link from "next/link";
-import Image from 'next/image';
 
 export const metadata = {
   title: "Kinde Auth",
@@ -36,19 +35,6 @@ export default async function RootLayout({
                 </>
               ) : (
                 <div className="profile-blob">
-                  {user?.picture ? (
-                    <Image
-                      src={user.picture}
-                      alt="user profile avatar"
-                      width={48}
-                      height={48}
-                      className="avatar"
-                    />
-                  ) : (
-                    <div className="avatar-placeholder">
-                      {user?.given_name?.[0] || 'U'}
-                    </div>
-                  )}
                   <div>
                     <p className="text-heading-2">
                       {user?.given_name} {user?.family_name}
