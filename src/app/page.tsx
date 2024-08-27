@@ -5,7 +5,7 @@ export default function Home() {
     <div className="container">
       <div className="card hero">
         <p className="text-display-1 hero-title">
-          Let's start your journey <br /> with Midpilot
+          Let&apos;s start your journey <br /> with Midpilot
         </p>
         <p className="text-body-1 hero-tagline">Begin your onboarding process</p>
 

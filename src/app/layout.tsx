@@ -6,6 +6,7 @@ import {
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import Link from "next/link";
+import Image from 'next/image';
 
 export const metadata = {
   title: "Kinde Auth",
@@ -24,7 +25,7 @@ export default async function RootLayout({
       <body>
         <header>
           <nav className="nav container">
-            <h1 className="text-display-3">KindeAuth</h1>
+            <h1 className="text-display-3">Midpilot Docs</h1>
             <div>
               {!(await isAuthenticated()) ? (
                 <>
@@ -36,16 +37,16 @@ export default async function RootLayout({
               ) : (
                 <div className="profile-blob">
                   {user?.picture ? (
-                    <img
-                      className="avatar"
-                      src={user?.picture}
+                    <Image
+                      src={user.picture}
                       alt="user profile avatar"
-                      referrerPolicy="no-referrer"
+                      width={48}
+                      height={48}
+                      className="avatar"
                     />
                   ) : (
-                    <div className="avatar">
-                      {user?.given_name?.[0]}
-                      {user?.family_name?.[0]}
+                    <div className="avatar-placeholder">
+                      {user?.given_name?.[0] || 'U'}
                     </div>
                   )}
                   <div>
@@ -63,7 +64,7 @@ export default async function RootLayout({
         <main>{children}</main>
         <footer className="footer">
           <div className="container">
-            <strong className="text-heading-2">KindeAuth</strong>
+            <strong className="text-heading-2">Midpilot Docs</strong>
             <p className="footer-tagline text-body-3">
               Visit our{" "}
               <Link className="link" href="https://kinde.com/docs">
@@ -72,7 +73,7 @@ export default async function RootLayout({
             </p>
 
             <small className="text-subtle">
-              © 2023 KindeAuth, Inc. All rights reserved
+              © 2024 Midpilot AS. All rights reserved
             </small>
           </div>
         </footer>

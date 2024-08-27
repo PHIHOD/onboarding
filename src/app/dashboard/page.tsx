@@ -35,7 +35,7 @@ export default function Dashboard() {
       </section>
       <section className="cta-section">
         <h2 className="text-heading-1">Stay Tuned</h2>
-        <p className="text-body-2">We're working hard to bring you the best resources. Check back soon!</p>
+        <p className="text-body-2">We&apos;re working hard to bring you the best resources. Check back soon!</p>
         <Link href="/" className="btn btn-dark btn-big">
           Return to Home
         </Link>
