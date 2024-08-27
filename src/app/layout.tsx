@@ -66,9 +66,9 @@ export default async function RootLayout({
           <div className="container">
             <strong className="text-heading-2">Midpilot Docs</strong>
             <p className="footer-tagline text-body-3">
-              Visit our{" "}
-              <Link className="link" href="https://kinde.com/docs">
-                help center
+              Back to our{" "}
+              <Link className="link" href="https://midpilot.com">
+                website
               </Link>
             </p>
 
