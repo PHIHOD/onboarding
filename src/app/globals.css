@@ -107,7 +107,7 @@ a {
 }
 
 .container {
-  padding: 0 var(--g-spacing-6x-large);
+  padding: 0 var(--g-spacing-base);
   margin: auto;
 }
 
