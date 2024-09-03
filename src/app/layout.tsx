@@ -8,8 +8,8 @@ import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Kinde Auth",
-  description: "Kinde with NextJS App Router",
+  title: "Midpilot Onboarding Guide",
+  description: "Get started with Midpilot",
 };
 
 export default async function RootLayout({
