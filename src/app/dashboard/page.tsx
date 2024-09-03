@@ -60,18 +60,7 @@ export default function Dashboard() {
             <CardContent>
               <ol className="list-decimal list-inside space-y-2">
                 <li>Locate the <code className="bg-gray-100 p-1 rounded">midpilot.js</code> file provided by Midpilot.</li>
-                <li>Place this file in your project&apos;s <code className="bg-gray-100 p-1 rounded">/src</code> directory.</li>
-                <li>In the component where you want to display the Midpilot button, add the following import statement:</li>
-              </ol>
-              <pre className="bg-gray-100 p-4 rounded-md mt-4 overflow-x-auto">
-                <code>import Midpilot from &apos;./Midpilot&apos;;</code>
-              </pre>
-              <p className="mt-4">Within your component&apos;s JSX, add the Midpilot component:</p>
-              <pre className="bg-gray-100 p-4 rounded-md mt-2 overflow-x-auto">
-                <code>&lt;Midpilot /&gt;</code>
-              </pre>
-              <p className="mt-4 text-sm text-gray-600">Note: Ensure there are no spaces around the equal signs.</p>
-              <Accordion type="single" collapsible className="w-full">
+                <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="midpilot-js">
                   <AccordionTrigger>View midpilot.js Code</AccordionTrigger>
                   <AccordionContent>
@@ -94,6 +83,18 @@ export default Midpilot;`}
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
+                <li>Place this file in your project&apos;s <code className="bg-gray-100 p-1 rounded">/src</code> directory.</li>
+                <li>In the component where you want to display the Midpilot button, add the following import statement:</li>
+              </ol>
+              <pre className="bg-gray-100 p-4 rounded-md mt-4 overflow-x-auto">
+                <code>import Midpilot from &apos;./Midpilot&apos;;</code>
+              </pre>
+              <p className="mt-4">Within your component&apos;s JSX, add the Midpilot component:</p>
+              <pre className="bg-gray-100 p-4 rounded-md mt-2 overflow-x-auto">
+                <code>&lt;Midpilot /&gt;</code>
+              </pre>
+              <p className="mt-4 text-sm text-gray-600">Note: Ensure there are no spaces around the equal signs.</p>
+              
               <p className="mt-4">Your application should now run with the Midpilot component successfully integrated.</p>
             </CardContent>
           </Card>
