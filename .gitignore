@@ -35,3 +35,4 @@ pnpm.lock.yaml
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+src/app/structure.json

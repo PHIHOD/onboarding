@@ -224,3 +224,17 @@ a {
 .next-steps-section {
   margin-top: var(--g-spacing-2x-large);
 }
+
+.integration-guide ol {
+  margin-left: 1.5rem;
+}
+
+.integration-guide li {
+  margin-bottom: 0.5rem;
+}
+
+.integration-guide pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
