@@ -12,9 +12,9 @@ export default function Dashboard() {
         <h2 className="text-heading-1 mb-4">1. Adding the Midpilot Component</h2>
         <ol className="list-decimal list-inside mb-6">
           <li>Locate the `Midpilot.js` file provided by Midpilot.</li>
-          <li>Place this file in your project's `/src` directory, preferably in a `/components` subdirectory.</li>
+          <li>Place this file in your project&apos;s `/src` directory, preferably in a `/components` subdirectory.</li>
           <li>Import the Midpilot component in your desired file:
-            <pre className="bg-gray-100 p-2 mt-2 rounded"><code>import Midpilot from './Midpilot';</code></pre>
+            <pre className="bg-gray-100 p-2 mt-2 rounded"><code>import Midpilot from &apos;./Midpilot&apos;;</code></pre>
           </li>
           <li>Add the Midpilot component to your JSX:
             <pre className="bg-gray-100 p-2 mt-2 rounded"><code>&lt;Midpilot /&gt;</code></pre>
@@ -28,8 +28,8 @@ export default function Dashboard() {
         <h2 className="text-heading-1 mb-4">3. Configuring Environment Variables</h2>
         <p className="mb-4">Add these lines to your `.env` file:</p>
         <pre className="bg-gray-100 p-2 mb-6 rounded"><code>
-REACT_APP_AGENT_ID=""
-REACT_APP_AGENT_TOKEN=""
+REACT_APP_AGENT_ID=&quot;&quot;
+REACT_APP_AGENT_TOKEN=&quot;&quot;
         </code></pre>
 
         <h2 className="text-heading-1 mb-4">4. Running Your Application</h2>
