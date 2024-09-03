@@ -55,7 +55,7 @@ export default function Dashboard() {
         <TabsContent value="component">
           <Card>
             <CardHeader>
-              <CardTitle id="1-adding-the-midpilot-component">1. Adding the Midpilot Component</CardTitle>
+              <CardTitle id="1-adding-the-midpilot-component">Adding the Midpilot Component</CardTitle>
             </CardHeader>
             <CardContent>
               <ol className="list-decimal list-inside space-y-2">
@@ -102,7 +102,7 @@ export default Midpilot;`}
         <TabsContent value="dependencies">
           <Card>
             <CardHeader>
-              <CardTitle id="2-installing-dependencies">2. Installing Dependencies</CardTitle>
+              <CardTitle id="2-installing-dependencies">Installing Dependencies</CardTitle>
             </CardHeader>
             <CardContent>
               <ol className="list-decimal list-inside space-y-2">
@@ -122,7 +122,7 @@ export default Midpilot;`}
         <TabsContent value="env">
           <Card>
             <CardHeader>
-              <CardTitle id="3-configuring-environment-variables">3. Configuring Environment Variables</CardTitle>
+              <CardTitle id="3-configuring-environment-variables">Configuring Environment Variables</CardTitle>
             </CardHeader>
             <CardContent>
               <ol className="list-decimal list-inside space-y-2">
@@ -142,7 +142,7 @@ export default Midpilot;`}
         <TabsContent value="run">
           <Card>
             <CardHeader>
-              <CardTitle id="4-running-your-application">4. Running Your Application</CardTitle>
+              <CardTitle id="4-running-your-application">Running Your Application</CardTitle>
             </CardHeader>
             <CardContent>
               <ol className="list-decimal list-inside space-y-2">
