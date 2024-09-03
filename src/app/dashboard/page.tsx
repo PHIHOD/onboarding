@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { BookOpen, Code, Cog, PlayCircle, HelpCircle, Mail } from "lucide-react"
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion"
 
 export default function Dashboard() {
   return (
@@ -58,7 +59,7 @@ export default function Dashboard() {
             </CardHeader>
             <CardContent>
               <ol className="list-decimal list-inside space-y-2">
-                <li>Locate the <code className="bg-gray-100 p-1 rounded">Midpilot.js</code> file provided by Midpilot.</li>
+                <li>Locate the <code className="bg-gray-100 p-1 rounded">midpilot.js</code> file provided by Midpilot.</li>
                 <li>Place this file in your project&apos;s <code className="bg-gray-100 p-1 rounded">/src</code> directory.</li>
                 <li>In the component where you want to display the Midpilot button, add the following import statement:</li>
               </ol>
@@ -70,12 +71,29 @@ export default function Dashboard() {
                 <code>&lt;Midpilot /&gt;</code>
               </pre>
               <p className="mt-4 text-sm text-gray-600">Note: Ensure there are no spaces around the equal signs.</p>
-              <pre className="bg-gray-100 p-4 rounded-md mt-4 overflow-x-auto">
-                <code>
-                  REACT_APP_AGENT_ID=&quot;&quot;
-                  REACT_APP_AGENT_TOKEN=&quot;&quot;
-                </code>
-              </pre>
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="midpilot-js">
+                  <AccordionTrigger>View midpilot.js Code</AccordionTrigger>
+                  <AccordionContent>
+                    <pre className="bg-gray-100 p-4 rounded-md mt-4 overflow-x-auto">
+                      <code>
+                        {`// midpilot.js
+import React from 'react';
+
+const Midpilot = () => {
+  return (
+    <button className="midpilot-button">
+      Midpilot Button
+    </button>
+  );
+};
+
+export default Midpilot;`}
+                      </code>
+                    </pre>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
               <p className="mt-4">Your application should now run with the Midpilot component successfully integrated.</p>
             </CardContent>
           </Card>
