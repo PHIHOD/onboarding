@@ -20,11 +20,11 @@ export default function Dashboard() {
 
       <Tabs defaultValue="toc" className="mb-8">
         <TabsList className="grid w-full grid-cols-5">
-          <TabsTrigger value="toc">Contents</TabsTrigger>
-          <TabsTrigger value="component">Component</TabsTrigger>
-          <TabsTrigger value="dependencies">Dependencies</TabsTrigger>
-          <TabsTrigger value="env">Environment</TabsTrigger>
-          <TabsTrigger value="run">Run</TabsTrigger>
+          <TabsTrigger value="toc">Table of Contents</TabsTrigger>
+          <TabsTrigger value="component">Step 1: Component</TabsTrigger>
+          <TabsTrigger value="dependencies">Step 2: Dependencies</TabsTrigger>
+          <TabsTrigger value="env">Step 3: Environment</TabsTrigger>
+          <TabsTrigger value="run">Step 4: Run</TabsTrigger>
         </TabsList>
         <TabsContent value="toc">
           <Card>
