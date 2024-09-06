@@ -29,7 +29,7 @@ export default function Dashboard() {
           <TabsTrigger value="run">Step 4: Run</TabsTrigger>
         </TabsList>
         <TabsContent value="toc">
-          <Card>
+          <Card className="mt-32 sm:mt-2">
             <CardHeader>
               <CardTitle>Table of Contents</CardTitle>
             </CardHeader>
@@ -142,7 +142,7 @@ export default function Dashboard() {
         </TabsContent>
       </Tabs>
 
-      <Card className="mt-32 sm:mt-2">
+      <Card >
         <CardHeader>
           <CardTitle id="5-troubleshooting">Troubleshooting</CardTitle>
         </CardHeader>
