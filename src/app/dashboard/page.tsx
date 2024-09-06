@@ -61,12 +61,12 @@ export default function Dashboard() {
               <ol className="list-decimal list-inside space-y-2">
                 <li>Locate the <code className="bg-gray-100 p-1 rounded">midpilot.js</code> file provided by Midpilot.</li>
                 <Accordion type="single" collapsible className="w-full">
-                <AccordionItem value="midpilot-js">
-                  <AccordionTrigger>View midpilot.js Code</AccordionTrigger>
-                  <AccordionContent>
-                    <pre className="bg-gray-100 p-4 rounded-md mt-4 overflow-x-auto">
-                      <code>
-                        {`// midpilot.js
+                  <AccordionItem value="midpilot-js">
+                    <AccordionTrigger>View midpilot.js Code</AccordionTrigger>
+                    <AccordionContent>
+                      <pre className="bg-gray-100 p-4 rounded-md mt-4 overflow-x-auto">
+                        <code>
+                          {`// midpilot.js
 import React from 'react';
 
 const Midpilot = () => {
@@ -78,11 +78,36 @@ const Midpilot = () => {
 };
 
 export default Midpilot;`}
-                      </code>
-                    </pre>
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
+                        </code>
+                      </pre>
+                      <Button
+                        variant="outline"
+                        className="mt-4"
+                        onClick={() => {
+                          const element = document.createElement("a");
+                          const file = new Blob([`// midpilot.js
+import React from 'react';
+
+const Midpilot = () => {
+  return (
+    <button className="midpilot-button">
+      Midpilot Button
+    </button>
+  );
+};
+
+export default Midpilot;`], {type: 'text/plain'});
+                          element.href = URL.createObjectURL(file);
+                          element.download = "midpilot.js";
+                          document.body.appendChild(element);
+                          element.click();
+                        }}
+                      >
+                        Download midpilot.js
+                      </Button>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
                 <li>Place this file in your project&apos;s <code className="bg-gray-100 p-1 rounded">/src</code> directory.</li>
                 <li>In the component where you want to display the Midpilot button, add the following import statement:</li>
               </ol>
@@ -93,7 +118,7 @@ export default Midpilot;`}
               <pre className="bg-gray-100 p-4 rounded-md mt-2 overflow-x-auto">
                 <code>&lt;Midpilot /&gt;</code>
               </pre>
-              <p className="mt-4 text-sm text-gray-600">Note: Ensure there are no spaces around the equal signs.</p>
+         
               
               <p className="mt-4">Your application should now run with the Midpilot component successfully integrated.</p>
             </CardContent>
@@ -129,9 +154,12 @@ export default Midpilot;`}
                 <li>Locate or create a <code className="bg-gray-100 p-1 rounded">.env</code> file in your project's root directory.</li>
                 <li>Add the following lines to the <code className="bg-gray-100 p-1 rounded">.env</code> file:</li>
               </ol>
+              <p className="mt-2">Add the following lines to the .env file. Replace everything inside the &lt; &gt; brackets with the code we provided you with:</p>
               <pre className="bg-gray-100 p-4 rounded-md mt-4 overflow-x-auto">
                 <code>
                   REACT_APP_AGENT_ID=""
+                </code>
+                <code>
                   REACT_APP_AGENT_TOKEN=""
                 </code>
               </pre>
@@ -160,7 +188,7 @@ export default Midpilot;`}
 
       <Card>
         <CardHeader>
-          <CardTitle id="5-troubleshooting">5. Troubleshooting</CardTitle>
+          <CardTitle id="5-troubleshooting">Troubleshooting</CardTitle>
         </CardHeader>
         <CardContent>
           <p className="mb-4">
