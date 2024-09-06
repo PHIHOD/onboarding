@@ -142,7 +142,7 @@ export default function Dashboard() {
         </TabsContent>
       </Tabs>
 
-      <Card>
+      <Card className="mt-32 sm:mt-2">
         <CardHeader>
           <CardTitle id="5-troubleshooting">Troubleshooting</CardTitle>
         </CardHeader>
