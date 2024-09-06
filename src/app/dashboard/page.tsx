@@ -53,7 +53,7 @@ export default function Dashboard() {
           </Card>
         </TabsContent>
         <TabsContent value="component">
-          <Card>
+          < Card className="mt-32 sm:mt-2">
             <CardHeader>
               <CardTitle id="1-adding-the-midpilot-component">Adding the Midpilot Component</CardTitle>
             </CardHeader>
@@ -79,7 +79,7 @@ export default function Dashboard() {
           </Card>
         </TabsContent>
         <TabsContent value="dependencies">
-          <Card>
+          <Card className="mt-32 sm:mt-2">
             <CardHeader>
               <CardTitle id="2-installing-dependencies">Installing Dependencies</CardTitle>
             </CardHeader>
@@ -99,7 +99,7 @@ export default function Dashboard() {
           </Card>
         </TabsContent>
         <TabsContent value="env">
-          <Card>
+          <Card className="mt-32 sm:mt-2">
             <CardHeader>
               <CardTitle id="3-configuring-environment-variables">Configuring Environment Variables</CardTitle>
             </CardHeader>
@@ -124,7 +124,7 @@ export default function Dashboard() {
           </Card>
         </TabsContent>
         <TabsContent value="run">
-          <Card>
+          <Card className="mt-32 sm:mt-2">
             <CardHeader>
               <CardTitle id="4-running-your-application">Running Your Application</CardTitle>
             </CardHeader>
@@ -142,7 +142,7 @@ export default function Dashboard() {
         </TabsContent>
       </Tabs>
 
-      <Card >
+      <Card className="mt-32 sm:mt-2">
         <CardHeader>
           <CardTitle id="5-troubleshooting">Troubleshooting</CardTitle>
         </CardHeader>
