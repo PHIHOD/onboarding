@@ -92,7 +92,7 @@ export default Midpilot;`;
                   >
                     <code className="bg-gray-100 p-1 rounded">midpilot.js</code>
                   </Button>{' '}
-                  file provided by Midpilot.
+                  file.
                 </li>
                 <li>Place this file in your project&apos;s <code className="bg-gray-100 p-1 rounded">/src</code> directory.</li>
                 <li>In the component where you want to display the Midpilot button, add the following import statement:</li>
@@ -140,13 +140,17 @@ export default Midpilot;`;
                 <li>Locate or create a <code className="bg-gray-100 p-1 rounded">.env</code> file in your project's root directory.</li>
                 <li>Add the following lines to the <code className="bg-gray-100 p-1 rounded">.env</code> file:</li>
               </ol>
-              <p className="mt-2">Add the following lines to the .env file. Replace everything inside the &lt; &gt; brackets with the code we provided you with:</p>
+              <p className="mt-2">Add the following lines to the .env file:</p>
               <pre className="bg-gray-100 p-4 rounded-md mt-4 overflow-x-auto">
                 <code>
-                  REACT_APP_AGENT_ID=""
+                  REACT_APP_AGENT_ID="your_agent_id"
                 </code>
+          
+              </pre>
+              <pre className="bg-gray-100 p-4 rounded-md mt-4 overflow-x-auto">
+             
                 <code>
-                  REACT_APP_AGENT_TOKEN=""
+                  REACT_APP_AGENT_TOKEN="your_agent_token"
                 </code>
               </pre>
               <p className="mt-4 text-sm text-gray-600">Note: Ensure there are no spaces around the equal signs.</p>
