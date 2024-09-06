@@ -62,7 +62,7 @@ export default function Dashboard() {
                 <li>
                   Download the{' '}
                   <DownloadButton />
-                  file.
+                   file.
                 </li>
                 <li>Place this file in your project&apos;s <code className="bg-gray-100 p-1 rounded">/src</code> directory.</li>
                 <li>In the component where you want to display the Midpilot button, add the following import statement:</li>
