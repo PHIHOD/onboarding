@@ -21,7 +21,7 @@ export default function Dashboard() {
       </Card>
 
       <Tabs defaultValue="toc" className="mb-8">
-        <TabsList className="grid w-full grid-cols-5">
+        <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           <TabsTrigger value="toc">Table of Contents</TabsTrigger>
           <TabsTrigger value="component">Step 1: Component</TabsTrigger>
           <TabsTrigger value="dependencies">Step 2: Dependencies</TabsTrigger>
@@ -74,8 +74,6 @@ export default function Dashboard() {
               <pre className="bg-gray-100 p-4 rounded-md mt-2 overflow-x-auto">
                 <code>&lt;Midpilot /&gt;</code>
               </pre>
-         
-              
               <p className="mt-4">Your application should now run with the Midpilot component successfully integrated.</p>
             </CardContent>
           </Card>
@@ -115,10 +113,8 @@ export default function Dashboard() {
                 <code>
                   REACT_APP_AGENT_ID="your_agent_id"
                 </code>
-          
               </pre>
               <pre className="bg-gray-100 p-4 rounded-md mt-4 overflow-x-auto">
-             
                 <code>
                   REACT_APP_AGENT_TOKEN="your_agent_token"
                 </code>
@@ -163,7 +159,6 @@ export default function Dashboard() {
           <p className="mt-4">
             We&apos;re committed to ensuring a smooth integration experience and are here to help resolve any challenges you may face.
           </p>
-       
         </CardContent>
       </Card>
     </div>
