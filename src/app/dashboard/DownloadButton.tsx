@@ -31,7 +31,7 @@ export default Midpilot;`;
 
   return (
     <Button
-      variant="outline"
+      variant="default"
       className="mt-4"
       onClick={handleDownload}
     >
