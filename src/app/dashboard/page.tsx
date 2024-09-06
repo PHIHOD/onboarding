@@ -40,7 +40,6 @@ export default function Dashboard() {
                   { href: "#2-installing-dependencies", text: "Installing Dependencies", icon: <Cog className="w-5 h-5 mr-2" /> },
                   { href: "#3-configuring-environment-variables", text: "Configuring Environment Variables", icon: <BookOpen className="w-5 h-5 mr-2" /> },
                   { href: "#4-running-your-application", text: "Running Your Application", icon: <PlayCircle className="w-5 h-5 mr-2" /> },
-                  { href: "#5-troubleshooting", text: "Troubleshooting", icon: <HelpCircle className="w-5 h-5 mr-2" /> },
                 ].map((item, index) => (
                   <li key={index}>
                     <Link href={item.href} className="flex items-center text-blue-600 hover:underline">
@@ -60,8 +59,31 @@ export default function Dashboard() {
             </CardHeader>
             <CardContent>
               <ol className="list-decimal list-inside space-y-2">
-                <li>Locate the <code className="bg-gray-100 p-1 rounded">midpilot.js</code> file provided by Midpilot.</li>
-                
+                <li>Download the <code className="bg-gray-100 p-1 rounded">midpilot.js</code> file provided by Midpilot.</li>
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="midpilot-js">
+                    <AccordionTrigger>View midpilot.js Code</AccordionTrigger>
+                    <AccordionContent>
+                      <pre className="bg-gray-100 p-4 rounded-md mt-4 overflow-x-auto">
+                        <code>
+                          {`// midpilot.js
+import React from 'react';
+
+const Midpilot = () => {
+  return (
+    <button className="midpilot-button">
+      Midpilot Button
+    </button>
+  );
+};
+
+export default Midpilot;`}
+                        </code>
+                      </pre>
+                      <DownloadButton />
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
                 <li>Place this file in your project&apos;s <code className="bg-gray-100 p-1 rounded">/src</code> directory.</li>
                 <li>In the component where you want to display the Midpilot button, add the following import statement:</li>
               </ol>
@@ -157,9 +179,7 @@ export default function Dashboard() {
           <p className="mt-4">
             We&apos;re committed to ensuring a smooth integration experience and are here to help resolve any challenges you may face.
           </p>
-          <p className="mt-4">
-            Thank you for choosing Midpilot! We look forward to enhancing your application with our powerful features.
-          </p>
+       
         </CardContent>
       </Card>
     </div>

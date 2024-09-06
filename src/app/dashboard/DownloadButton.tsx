@@ -5,8 +5,7 @@ import { Button } from "@/components/ui/button"
 
 const DownloadButton = () => {
   const handleDownload = () => {
-    const element = document.createElement("a");
-    const file = new Blob([`// midpilot.js
+    const content = `// midpilot.js
 import React from 'react';
 
 const Midpilot = () => {
@@ -17,11 +16,17 @@ const Midpilot = () => {
   );
 };
 
-export default Midpilot;`], {type: 'text/plain'});
-    element.href = URL.createObjectURL(file);
-    element.download = "midpilot.js";
-    document.body.appendChild(element);
-    element.click();
+export default Midpilot;`;
+
+    const blob = new Blob([content], { type: 'text/javascript' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'midpilot.js';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
   };
 
   return (
