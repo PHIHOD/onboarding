@@ -6,33 +6,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { BookOpen, Code, Cog, PlayCircle, HelpCircle, Mail } from "lucide-react"
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion"
+import DownloadButton from './DownloadButton'
 
 export default function Dashboard() {
-  const handleDownload = () => {
-    const content = `// midpilot.js
-import React from 'react';
-
-const Midpilot = () => {
-  return (
-    <button className="midpilot-button">
-      Midpilot Button
-    </button>
-  );
-};
-
-export default Midpilot;`;
-
-    const blob = new Blob([content], { type: 'text/javascript' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'midpilot.js';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-  };
-
   return (
     <div className="container mx-auto p-6 max-w-4xl">
       <Card className="mb-8">
@@ -85,13 +61,7 @@ export default Midpilot;`;
               <ol className="list-decimal list-inside space-y-2">
                 <li>
                   Download the{' '}
-                  <Button
-                    variant="link"
-                    className="p-0 h-auto text-blue-600 hover:underline"
-                    onClick={handleDownload}
-                  >
-                    <code className="bg-gray-100 p-1 rounded">midpilot.js</code>
-                  </Button>{' '}
+                  <DownloadButton />
                   file.
                 </li>
                 <li>Place this file in your project&apos;s <code className="bg-gray-100 p-1 rounded">/src</code> directory.</li>
