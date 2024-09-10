@@ -15,7 +15,7 @@ This code is the exclusive property of Midpilot AS and is protected by Norwegian
 
 License Terms:
 1. This code may only be used in accordance with the current Terms of Use agreement.
-2. No part of this code may be reproduced, distributed, or modified without express written permission from [Your Company Name].
+2. No part of this code may be reproduced, distributed, or modified without express written permission from Midpilot AS.
 3. This license does not grant any ownership rights to the licensee.
 4. Any use of this code outside the scope of the Terms of Use is strictly prohibited.
 
