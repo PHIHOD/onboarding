@@ -1,7 +1,7 @@
 "use client";
-/*Use client ensures that the component is rendered on the client side in Next.js
+/*
 
-Copyright (c) 2024 Midpilot. All rights reserved.
+Copyright (c) 2024 Midpilot AS. All rights reserved.
 
 This code is the exclusive property of Midpilot AS and is protected by Norwegian copyright law. 
 
