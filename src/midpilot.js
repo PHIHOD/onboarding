@@ -1,5 +1,19 @@
 "use client";
-// Use client ensures that the component is rendered on the client side in Next.js
+/*Use client ensures that the component is rendered on the client side in Next.js
+
+Copyright (c) 2024 Midpilot. All rights reserved.
+
+This code is the exclusive property of Midpilot AS and is protected by Norwegian copyright law. 
+
+License Terms:
+1. This code may only be used in accordance with the current Terms of Use agreement.
+2. No part of this code may be reproduced, distributed, or modified without express written permission from [Your Company Name].
+3. This license does not grant any ownership rights to the licensee.
+4. Any use of this code outside the scope of the Terms of Use is strictly prohibited.
+
+For full Terms of Use, please refer to: https://www.midpilot.com/terms
+*/
+
 
 import React, { useEffect, useState } from "react";
 import { RetellWebClient } from "retell-client-js-sdk";
